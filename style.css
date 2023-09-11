@@ -1,0 +1,41 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    max-width: 50em;
+    background-color: antiquewhite;
+}
+
+p{
+    background-color: rgb(133, 163, 137);
+    margin: 1em;
+    padding: 1em;
+}
+a:visited{
+    color: blueviolet;
+}
+a:hover{
+    text-decoration: none;
+    color: aqua;
+    background-color: bisque;
+}
+
+p b{
+    color: violet;
+}
+h2 + p{
+    font-size: larger;
+}
+strong, em {
+    background-color: brown;
+}
+.container{
+    width: 100%;
+}
+.col1,.col2{
+    background-color: aliceblue;
+}
+@media screen and (min-width: 600px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+}
